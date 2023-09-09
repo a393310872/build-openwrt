@@ -8,7 +8,7 @@
 
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-
+sed -i "s/OpenWrt /$(date +%Y.%m.%d) By Rulebili QQ82340009 /g" package/lean/default-settings/files/zzz-default-settings
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
 
